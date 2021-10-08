@@ -1,0 +1,211 @@
+body {
+    /* background-color: hsl(218, 28%, 13%); */
+    font-size: 14px;
+    color: white;
+}
+
+#navbar {
+    padding: 4px;
+    background-color: hsl(217, 28%, 15%);
+}
+
+.navy {
+    float: right;
+    padding: 18px;
+}
+
+#home {
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(217, 28%, 15%);
+    margin: 0px 0px;
+    padding: 50px 0px;
+}
+
+#btn {
+    background-color: hsl(176, 68%, 64%);
+    border-radius: 32px;
+    color: white;
+    padding: 10px 48px;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: url(/images/bg-curvy-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(218deg 24% 15%);
+    padding-top: 100px;
+}
+
+#more {
+    display: flex;
+    padding: 34px 25px;
+    background-color: #181f2b;
+}
+
+#content {
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.more-cont {
+    margin-top: 12px;
+}
+
+a {
+    color: hsl(176, 68%, 64%);
+}
+
+#review {
+    display: flex;
+    padding: 70px;
+    background-color: hsl(218, 28%, 13%);
+}
+
+#review img {
+    border-radius: 70px;
+    /* size: 12px; */
+    height: 65px;
+    width: 65px;
+}
+
+#bottom {
+    display: flex;
+}
+
+.cont {
+    justify-content: center;
+    text-align: center;
+}
+
+.cont:nth-child(2n+1) {
+    padding-left: 180px;
+    padding-right: 2px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.cont:nth-child(2n) {
+    padding-left: 118px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-right: 180px;
+}
+
+#bottom {
+    background-color: hsl(216, 53%, 9%);
+    position: relative;
+    top: -212px;
+    height: 245px;
+    z-index: -1;
+    padding-top: 123px;
+}
+
+.review-cont {
+    background-color: hsl(219, 30%, 18%);
+    padding: 1px;
+    margin: 20px;
+}
+
+#signin {
+    background-color: hsl(217, 28%, 15%);
+    position: relative;
+    top: -60px;
+    left: 33%;
+    display: inline-block;
+    width: 541px;
+    border-radius: 10px;
+    height: 211px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    padding-top: 90px;
+}
+
+#box1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 23px;
+    padding-left: 32px;
+    padding-right: 84px;
+}
+
+#box2 {
+    padding-top: 104px;
+}
+
+li {
+    margin: 11px 0px;
+    list-style: none;
+}
+
+input {
+    border-radius: 20px;
+    height: 33px;
+    width: 197px;
+}
+
+h6 {
+    font-size: 28px;
+    margin: 0px;
+    padding-top: 27px;
+}
+
+@media screen and (max-width:375px) {
+    #home img {
+        height: 100%;
+        width: 100%;
+    }
+    #services {
+        display: block;
+        background: url(/images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: hsl(218, 28%, 13%);
+    }
+    .cont:nth-child(2n+1) {
+        margin: 8px 2px;
+        padding: 2px 2px;
+    }
+    .cont:nth-child(2n) {
+        margin: 8px 2px;
+        padding: 2px 2px;
+    }
+    #more {
+        display: block;
+    }
+    .more-cont img {
+        height: 100%;
+        width: 100%;
+    }
+    #review {
+        display: block;
+    }
+    #bottom {
+        display: block;
+        height: auto;
+        width: auto;
+        position: relative;
+        top: 2px;
+        left: 0px;
+    }
+    #box1 {
+        height: auto;
+        width: auto;
+    }
+    #signin {
+        height: auto;
+        width: auto;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
